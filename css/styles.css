@@ -1,0 +1,492 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Marker;
+    src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+/* CSS correspondiente al Index */
+body {
+    background-color: #528BCC;
+}
+
+/* Barra de navegacion  */
+.barraNavegacion {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    flex-wrap: nowrap;
+    font-size: 25px;
+    background-image: url(../images/wepik-202237-82846.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.824));
+    width: max-content;
+    height: 100px;
+    /* position: fixed;
+    top: 0; */
+    grid-area: nav;
+}
+
+.itemsNav {
+    font-size: 20px;
+    color: hsla(204, 42%, 86%, 0.886);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 25px;
+    padding-left: 50px;
+}
+
+.itemsNav__boton {
+    text-decoration: none;
+    color: hsla(204, 42%, 86%, 0.886);
+    margin: 15px;
+}
+
+.itemsNav__logo a img {
+    width: 170px;
+    height: 100%;
+}
+
+/* Fin barra de navegacion  */
+
+/* Contenedor Principal  */
+
+.grid__ContainerIndex {
+    display: grid;
+    grid-template-areas: 
+                        "nav nav nav"
+                        "aside sec1 sec1"
+                        "aside sec2 sec2"
+                        "pie pie pie"
+                        ;
+}
+
+/* Media Queries Mobile */
+@media (max-width: 360px){
+    .grid__ContainerIndex{
+        grid-template-areas: 
+                        "nav nav "
+                        "sec1 sec1"
+                        "sec2 sec2"
+                        "aside aside"
+                        "pie pie";
+    }
+    .contenedor__menuIzquierdo {
+        align-items: center;
+    }
+}
+/* Media Queries Desktop */
+@media (min-width: 1024px){
+    .grid__ContainerIndex{
+        grid-template-areas: 
+                        "nav nav nav nav"
+                        "aside aside sec1 sec1"
+                        "aside aside sec2 sec2"
+                        "aside aside sec2 sec2"
+                        "pie pie pie pie";
+    }
+}
+
+.contenedor__menuIzquierdo {
+    background-color: #2E6099;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    grid-area: aside;
+}
+
+.menuIzquierdo__titulo {
+    margin-bottom: 30px;
+}
+.menuIzquierdo__boton {
+    list-style: none;
+    text-decoration: none;
+    background-color: #051B33;
+    color: rgb(250, 245, 245);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.menuIzquierdo__boton a {
+    color: hsla(204, 42%, 86%, 0.886);
+}
+
+.contenedor__queEsElProyectoVenus {
+    grid-area: sec1;
+}
+.queEsElProyectoVenus__titulo {
+    text-decoration: overline;
+    margin-top: 15px;
+}
+
+.queEsElProyectoVenus__descripcion {
+    width: auto;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 5px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    overflow: auto;
+}
+
+h2 {
+    color: #0a0013;
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    margin: 25px;
+}
+
+
+
+p {
+    color: hwb(150 2% 97%);
+    ;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+
+ol li {
+    color: #4b167a
+}
+
+li {
+    list-style: square;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor__tablaComparativa {
+    margin: 50px 30px 20px 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid;
+    grid-area: sec2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2;
+}
+
+/* FOOTER  */
+.pieDePagina {
+    background-color: #051B33;
+    color: hsl(150, 6%, 93%);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: pie;
+}
+.pieDePagina__rrss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.pieDePagina__rrss img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.donaAlProyecto {
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 2px;
+    position: relative;
+    top: 0px;
+    right: 0;
+}
+
+/* Fin CSS correspondiente al Index */
+
+/* CSS Correspondiente a ebr.html */
+
+.ebr__Descripcion {
+
+    margin: 25px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+.videoEbr {
+    margin: 25px;
+    margin-left: 300px;
+}
+
+/* CSS correspondiente a aprendeMas.html */
+
+.tituloAprendeMas {
+    align-items: center;
+}
+
+.grid__containerAprendeMas {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "tit tit tit"
+        "sec1 sec1 aside"
+        "sec1 sec1 aside"
+        "sec1 sec1 ."
+        "sec1 sec1 ."
+        "sec1 sec1 ."
+        "sec1 sec1 ."
+        "pie pie pie";
+    align-items: stretch;
+}
+/* Media Queries Mobile */
+@media (max-width: 360px){
+    .grid__containerAprendeMas {
+        grid-template-areas:
+        "nav nav"
+        "tit tit"
+        "sec1 sec1"
+        "sec1 sec1"
+        "sec1 sec1"
+        "sec1 sec1"
+        "sec1 sec1"
+        "sec1 sec1"
+        "aside aside"
+        "pie pie"
+    }
+    .itemsNav {
+        width: max-content;
+    }
+}
+/* Media Queries Desktop */
+@media (min-width: 1024px){
+    .grid__containerAprendeMas{
+    grid-template-areas:
+    "nav nav nav nav"
+    "tit tit tit tit "
+    "sec1 sec1 sec1 aside"
+    "sec1 sec1 sec1 aside"
+    "sec1 sec1 sec1"
+    "sec1 sec1 sec1"
+    "sec1 sec1 sec1"
+    "sec1 sec1 sec1"
+    "pie pie pie pie";
+    }
+    .barraNavegacion {
+        width: 100%;
+    }
+    .itemsNav {
+        width: max-content;
+    }
+}
+.tituloAprendeMas {
+    grid-area: tit;
+    margin: 25px;
+
+}
+.tituloAprendeMas p {
+    font-size: 17px;
+}
+.grid__AprendeMas__principal {
+    grid-area: sec1;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.aprendeMas__Video1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video1>div {
+    margin: 10px;
+}
+.aprendeMas__Video1 iframe {
+    width: auto;
+    height: auto
+}
+
+.aprendeMas__Video2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video2>div {
+    margin: 15px;
+}
+.aprendeMas__Video2 iframe {
+    width: auto;
+    height: auto;
+}
+.aprendeMas__Video3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video3>div {
+    margin: 15px;
+}
+.aprendeMas__Video3 iframe {
+    width: auto;
+    height: auto;
+}
+.aprendeMas__Video4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video4>div {
+    margin: 15px;
+}
+.aprendeMas__Video4 iframe {
+    width: auto;
+    height: auto;
+}
+.aprendeMas__Video5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video5>div {
+    margin: 15px;
+}
+.aprendeMas__Video5 iframe {
+    width: auto;
+    height: auto;
+}
+.aprendeMas__Video6 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.aprendeMas__Video6>div {
+    margin: 15px;
+}
+.aprendeMas__Video6 iframe {
+    width: auto;
+    height: auto;
+}
+.aprendeMas__Video6 div p a {
+    margin: 10px;
+}
+.grid__AprendeMas__aside {
+    background-color: #80BBFF;
+    color: #051B33;
+    grid-area: aside;
+    border: solid 2px #051B33;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+
+}
+
+.grid__AprendeMas__aside p {
+    padding-top: 10px;
+}
+
+.grid__AprendeMas__aside a {
+    margin-top: 8px;
+}
+
+.grid__AprendeMas__pieDePagina {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    grid-area: pie;
+    background-color: #051B33;
+    color: hsl(150, 6%, 93%);
+}
+
+
+/* CSS Correspondiente al Newsletter.html */
+
+.newsletter__descripción {
+    text-align: center;
+}
+.formularioNewsletter {
+
+    width: 400px;
+    background: #24303c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 50px 300px;
+    padding: 25px;
+    box-shadow: 7px 13px 37px #000;
+}
+.newsletter__inputs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 2px solid #143A66;
+    background: #24303c5d;
+    color: white;
+}
+.formularioNewsletter p {
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+.formularioNewsletter p a {
+    color: white;
+    text-decoration: none;
+}
+.formularioNewsletter p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.newsletter__botones {
+    margin-left: 125px;
+    margin-bottom: 5px;
+    width: 30%;
+    background: #528BCC;
+    color: white;
+    border: none;
+    padding: 5px;
+
+
+
+
+}
