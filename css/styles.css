@@ -6,14 +6,18 @@
 }
 
 @font-face {
-    font-family: Marker;
-    src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+    font-family: 'EB Garamond', serif;
+    src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
 }
-
+html, body { 
+    height: auto;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    background-image: linear-gradient(to bottom left, #1f2b8c, #3c9d69);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 /* CSS correspondiente al Index */
-body {
-    background-color: #528BCC;
-}
 
 /* Barra de navegacion  */
 .barraNavegacion {
@@ -22,8 +26,7 @@ body {
     align-items: space-evenly;
     flex-wrap: nowrap;
     font-size: 25px;
-    background-image: url(../images/wepik-202237-82846.png);
-    background: linear-gradient(rgba(0, 0, 0, 0.824));
+    background-color: rgba(0, 0, 0, 0.665);
     width: max-content;
     height: 100px;
     /* position: fixed;
@@ -227,7 +230,14 @@ a {
 
 /* CSS Correspondiente a ebr.html */
 
-.ebr__Descripcion {
+/* .bodyEBR {
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(to bottom left, #1f2b8c, #3c9d69);
+    background-repeat: no-repeat;
+    background-size: auto;
+} */
+.ebr__Descripcion1 {
 
     margin: 25px;
     line-height: 1.5em;
@@ -236,9 +246,121 @@ a {
 
 .videoEbr {
     margin: 25px;
-    margin-left: 300px;
+    margin-left: 150px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.ebr__DescripcionCaracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-areas: 
+                "intro intro ."
+                "caract caract ."
+                "caract caract ."
+                "caract caract ."
+                "caract caract ."
+                "caract caract ."
+                "caract caract .";
+    grid-column-gap: 10px */
+
+
+
+}    
+
+.introCaracteristicasEBR {
+    margin: 25px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    
 }
 
+.caracteristicasEBR1 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR2 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR3 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR4 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR5 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR6 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR7 {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s; 
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.caracteristicasEBR:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.caracteristicasEBR1 div p {
+    margin: 10px;
+}
+.caracteristicasEBR2 div p {
+    margin: 10px;
+}
+.caracteristicasEBR3 div p {
+    margin: 10px;
+}
+.caracteristicasEBR4 div p {
+    margin: 10px;
+}
+.caracteristicasEBR5 div p {
+    margin: 10px;
+}
+.caracteristicasEBR6 div p {
+    margin: 10px;
+}
+.caracteristicasEBR7 div p {
+    margin: 10px;
+}
 /* CSS correspondiente a aprendeMas.html */
 
 .tituloAprendeMas {
