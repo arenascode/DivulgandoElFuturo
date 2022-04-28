@@ -6,13 +6,15 @@
 }
 
 @font-face {
-    font-family: 'EB Garamond', serif;
-    src: url(../fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+    font-family: 'Dosis', sans-serif;
+    src: url(../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+    
 }
 html, body { 
     height: auto;
     width: 100%;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Dosis', sans-serif;
+    color: hsl(206, 29%, 91%);
     background-image: linear-gradient(to bottom left, #1f2b8c, #3c9d69);
     background-repeat: no-repeat;
     background-size: auto;
@@ -52,7 +54,6 @@ html, body {
 }
 
 .itemsNav__logo a img {
-    width: 170px;
     height: 100%;
 }
 
@@ -149,7 +150,6 @@ html, body {
 }
 
 h2 {
-    color: #0a0013;
     text-align: center;
     text-decoration: overline;
     letter-spacing: 2px;
@@ -159,13 +159,13 @@ h2 {
 
 
 
-p {
+/* p {
     color: hwb(150 2% 97%);
     ;
     font-size: 15px;
     font-weight: bold;
     text-align: justify;
-}
+} */
 
 
 
@@ -198,32 +198,27 @@ a {
 .pieDePagina {
     background-color: #051B33;
     color: hsl(150, 6%, 93%);
-    width: 100%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: pie;
+    margin-top: 10px;
 }
 .pieDePagina__rrss {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    justify-content:space-around;
 }
 .pieDePagina__rrss img {
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 3px;
 }
 
 .donaAlProyecto {
     width: 100px;
     margin-left: 10px;
     border-radius: 2px;
-    position: relative;
-    top: 0px;
-    right: 0;
 }
 
 /* Fin CSS correspondiente al Index */
@@ -560,6 +555,27 @@ h3 {
     color: hsl(150, 6%, 93%);
 }
 
+/* CSS correspondiente a FAQS.html */
+.navBarFqs {
+    background-color: rgba(0, 0, 0, 0.531);
+}
+
+main .introFaqs {
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    /* display: flex; */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .introFaqs p {
+    align-items: center;
+}
+#flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #flush-collapseFive, #flush-collapseSix, #flush-collapseSeven, #flush-collapseEight, #flush-collapseNine, #flush-collapseTen, #flush-collapseEleven, #flush-collapseTwelve {
+    color: #000;
+    text-align: justify;
+}
 
 /* CSS Correspondiente al Newsletter.html */
 
@@ -607,8 +623,4 @@ h3 {
     color: white;
     border: none;
     padding: 5px;
-
-
-
-
 }
