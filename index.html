@@ -12,102 +12,166 @@
 </head>
 
 <body>
-  <div class="grid__ContainerIndex">
-    <!-- Sección de Logo y Barra de Navegación -->
-    <nav class="barraNavegacion">
-      <div class="itemsNav__logo">
-        <a href="index.html"><img src="../DivulgandoElFuturo+Arenas/images/Logo.jpeg" alt="logo"></a>
+  <div class="container-fluid">
+    <header class="row navBar">
+      <div class="col-lg-3 col-sm-2 itemsNav__logo">
+        <a href="index.html"><img class="img-fluid" src="images/Logo.jpeg" alt="logo"></a>
       </div>
-      <div class="itemsNav">
-        <a class="itemsNav__boton" href="pages/ebr.html">Economía Basada En Recursos</a>
-        <a class="itemsNav__boton" href="pages/aprendeMas.html">Aprende Más Acerca Del Proyecto</a>
-        <a class="itemsNav__boton" href="pages/faqs.html">FAQS</a>
-        <a class="itemsNav__boton" href="pages/newsletter.html">Newsletter</a>
+      <div class="col-lg-9 col-sm-10 itemsNav">
+        <a class="itemsNav__boton" href="../DivulgandoElFuturo+Arenas/pages/ebr.html">Economía Basada En Recursos</a>
+        <a class="itemsNav__boton" href="../DivulgandoElFuturo+Arenas/pages/aprendeMas.html">Aprende Más Acerca Del Proyecto</a>
+        <a class="itemsNav__boton" href="../DivulgandoElFuturo+Arenas/pages/faqs.html">FAQS</a>
+        <a class="itemsNav__boton" href="../DivulgandoElFuturo+Arenas/pages/newsletter.html">Newsletter</a>
       </div>
-    </nav>
-    <!--Fin de Logo y Barra de Navegación-->
+    </header>
+      <main class="row contenedor__Principal">
+          <aside class="col-lg-3 col-md-2 col-sm-1 contenedor__menuIzquierdo" >
+            <ul><h5>Aspectos Principales</h5>
+              <li class="menuIzquierdo__boton"><a href="">Ciudades</a></li>
+              <li class="menuIzquierdo__boton"><a href="">Sistemas De Transporte</a></li>
+              <li class="menuIzquierdo__boton"><a href="">Fuentes De Energía</a></li>
+              <li class="menuIzquierdo__boton"><a href="">Factores Humanos</a></li>
+            </ul>
+          </aside>
+          <article class="col-lg-9 col-md-10  col-sm-11">
+            <div class="queEsElProyectoVenus__intro">
+              <div>
+                <h2 class="queEsElProyectoVenus__titulo">Qué Es El Proyecto Venus?</h2>
+                <div class="queEsElProyectoVenus__descripcion">
+                <p>El objetivo de este sitio web es dar difusión acerca del Proyecto Venus, el cual es una organización sin
+                  fines
+                  de lucro que reconoce la importante conexión entre la mala gestión de los recursos globales y problemas como
+                  la
+                  guerra, el cambio climático, la pobreza y el hambre. En un contexto más amplio, todos estos son resultados
+                  perjudiciales del sistema operativo socioeconómico actual. En respuesta a estos desafíos, nuestra
+                  organización
+                  presenta soluciones a través de la aplicación holística de la ciencia y la tecnología; dos áreas en las que
+                  los
+                  avances recientes tienen el potencial de generar impactos positivos de gran alcance.</p>
+      
+                <p>Sin embargo, si bien la tecnología puede lograr aliviar gradualmente algunos de estos problemas, no se
+                  pueden
+                  resolver simplemente abordando los síntomas, como lo hacemos ahora, porque son subproductos de un problema
+                  mucho
+                  mayor. Otro problema importante es que los intereses comerciales actualmente requieren una planificación a
+                  corto
+                  plazo y retornos oportunos de las inversiones. Por estas razones, además de nuestro enfoque técnico
+                  ampliado,
+                  nuestras propuestas incluyen un modelo económico alternativo que supera estas barreras artificiales para el
+                  bienestar planetario.</p>
+      
+                <p>Nuestras metodologías están diseñadas para aprovechar todo el potencial de la ciencia y la tecnología para
+                  lograr
+                  la mejora social de todos los sistemas vivos. Abogamos por nuevas formas de pensar y vivir para permitir que
+                  los
+                  seres humanos, la tecnología y la naturaleza progresen de manera sostenible.</p>
+              </div>
+            </div>
+          </article>
+      </main>
+      <section class="row">
+        <table class="table .table-striped tablaComparativaEBR col-md-11 col-sm-12">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="titulo__tablaEBR">Economía Basada En Recursos</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col" class="titulo__tablaEDM">Economía de Mercado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1.</th>
+              <td>Competición y rivalidad</td>
+              <th>VS</th>
+              <td></td>
+              <td>Cooperación y colaboración</td>
+            </tr>
+            <tr>
+              <th scope="row">2.</th>
+              <td>Gestión negligente de los recursos mediante el derroche</td>
+              <th>VS</th>
+              <td></td>
+              <td>Gestión responsable de los recursos</td>
+            </tr>
+            <tr>
+              <th scope="row">3.</th>
+              <td>Desigualdad Social: ricos y pobres (violencia estructural)</td>
+              <th>VS</th>
+              <td></td>
+              <td>Igualdad social: <p>acceso universal a bienes y servicios= Satisfacer necesidades</p></td>
+            </tr>
+            <tr>
+              <th scope="row">4.</th>
+              <td>Existencia de Fronteras (etnocentrismo, separación de las personas)</td>
+              <th>VS</th>
+              <td></td>
+              <td>Superación de fronteras artificiales que dividen a las personas, el planeta es hogar de todos</td>
+            </tr>
+            <tr>
+              <th scope="row">5.</th>
+              <td><p>Automatización:</p>
+                  <p>Desempleo técnologico irreversible</p>
 
-    <!-- menú izquierdo -->
-    <Section class="contenedor__menuIzquierdo">
-      <ul> <b class="menuIzquierdo__titulo">Aspectos Principales</b>
-        <li class="menuIzquierdo__boton"><a href="">Ciudades</a></li>
-        <li class="menuIzquierdo__boton"><a href="">Sistemas De Transporte</a></li>
-        <li class="menuIzquierdo__boton"><a href="">Fuentes De Energía</a></li>
-        <li class="menuIzquierdo__boton"><a href="">Factores Humanos</a></li>
-      </ul>
-    </Section>
-    <!-- fin menu izquierdo -->
-    <article class="contenedor__queEsElProyectoVenus">
-      <div class="queEsElProyectoVenus__intro">
-        <h2 class="queEsElProyectoVenus__titulo">Qué Es El Proyecto Venus?</h2>
-        <div class="queEsElProyectoVenus__descripcion">
-          <p>El objetivo de este sitio web es dar difusión acerca del Proyecto Venus, el cual es una organización sin
-            fines
-            de lucro que reconoce la importante conexión entre la mala gestión de los recursos globales y problemas como
-            la
-            guerra, el cambio climático, la pobreza y el hambre. En un contexto más amplio, todos estos son resultados
-            perjudiciales del sistema operativo socioeconómico actual. En respuesta a estos desafíos, nuestra
-            organización
-            presenta soluciones a través de la aplicación holística de la ciencia y la tecnología; dos áreas en las que
-            los
-            avances recientes tienen el potencial de generar impactos positivos de gran alcance.</p>
-
-          <p>Sin embargo, si bien la tecnología puede lograr aliviar gradualmente algunos de estos problemas, no se
-            pueden
-            resolver simplemente abordando los síntomas, como lo hacemos ahora, porque son subproductos de un problema
-            mucho
-            mayor. Otro problema importante es que los intereses comerciales actualmente requieren una planificación a
-            corto
-            plazo y retornos oportunos de las inversiones. Por estas razones, además de nuestro enfoque técnico
-            ampliado,
-            nuestras propuestas incluyen un modelo económico alternativo que supera estas barreras artificiales para el
-            bienestar planetario.</p>
-
-          <p>Nuestras metodologías están diseñadas para aprovechar todo el potencial de la ciencia y la tecnología para
-            lograr
-            la mejora social de todos los sistemas vivos. Abogamos por nuevas formas de pensar y vivir para permitir que
-            los
-            seres humanos, la tecnología y la naturaleza progresen de manera sostenible.</p>
+              </td>
+              <th>VS</th>
+              <td></td>
+              <td><p>Automatización:</p>
+                <p>Concepto de proyecto en lugar de trabajo</p>
+                <p>Recude y elimina trabajos peligrosos</p>
+                <p>Tecnología al servicio de todos: sistema global automatizado</p></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Sociedad estancada en instituciones obsoletas</td>
+              <th>VS</th>
+              <td></td>
+              <td>Sociedad emergente, dinámica</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td><p>Ausencia de diseño social</p> 
+                  <p>Oligarquía egoista, beneficio para pocos</p></td>
+              <th>VS</th>
+              <td></td>
+              <td><p>Diseño social integral: soluciones preventivas.</p>
+                  <p>Beneficios para todos</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Obsolecencia programada y percibida de los productos</td>
+              <th>VS</th>
+              <td></td>
+              <td>Productos hechos con la mejor calidad:
+                <p>Perdurable, estándar, reciclable y actualizable</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Tratar los sintomas o consecuencias de los problemas (imposible de solucionar)</td>
+              <th>VS</th>
+              <td></td>
+              <td>Tratar las causas de los problemas (unica forma de solucionarlos)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer class="row pieDePagina">
+        <div class="pieDePagina__rrss col-lg-3 col-md-2 col-sm-1">
+          <img src="images/RRSS/Twitter.png" alt="twitter" width="50" height="50">
+          <img src="images/RRSS/fb.png" alt="fb" width="50" height="50">
+          <img src="images/RRSS/IG.png" alt="IG" width="50" height="50">
         </div>
-      </div>
-      <!-- tabla comparativa EBR Economia actual  -->
-
-    </article>
-    <div class="contenedor__tablaComparativa">
-      <div class="tabla1">
-        <ul> <b>Economía Basada en Dinero</b>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-          <li>Lorem Ipsum</li>
-        </ul>
-      </div>
-      <div class="tabla2"></div>
-      <ul> <b>Economía Basada en Recursos</b>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-        <li>Lorem Ipsum</li>
-      </ul>
-    </div>
-    <!-- Acá Comienza el Footer-->
-    <footer class="pieDePagina">
-      <div class="pieDePagina__rrss">
-        <img src="images/RRSS/Twitter.png" alt="twitter" width="50" height="50">
-        <img src="images/RRSS/fb.png" alt="fb" width="50" height="50">
-        <img src="images/RRSS/IG.png" alt="IG" width="50" height="50">
-      </div>
-      <p>Este sitio web es unicamente con fines educativos sin animo alguno de lucro con su contenido. Todos los
-        derechos
-        son reservados a sus autores</p>
-      <button class="donaAlProyecto">Doná al proyecto</button>
-
-    </footer>
-    <!-- fin del footer -->
+        <p class="col-lg-6 col-md-8">Este sitio web es unicamente con fines educativos sin animo alguno de lucro con su contenido. Todos los
+          derechos
+          son reservados a sus autores</p>
+        <a class="btn btn-primary col-md-2" href="https://www.thevenusproject.com/donations/" role="button">Doná al Proyecto</a>
+      </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

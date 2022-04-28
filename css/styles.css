@@ -44,24 +44,28 @@ html, body {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     padding: 25px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 .itemsNav__boton {
     text-decoration: none;
     color: hsla(204, 42%, 86%, 0.886);
     margin: 15px;
+    transition: 1s;
+}
+.itemsNav__boton:hover {
+    transform: scale(1.1);
 }
 
 .itemsNav__logo a img {
-    height: 100%;
+    margin-left: -11px;
 }
 
 /* Fin barra de navegacion  */
 
 /* Contenedor Principal  */
 
-.grid__ContainerIndex {
+/* .grid__ContainerIndex {
     display: grid;
     grid-template-areas: 
                         "nav nav nav"
@@ -69,10 +73,10 @@ html, body {
                         "aside sec2 sec2"
                         "pie pie pie"
                         ;
-}
+} */
 
 /* Media Queries Mobile */
-@media (max-width: 360px){
+/* @media (max-width: 360px){
     .grid__ContainerIndex{
         grid-template-areas: 
                         "nav nav "
@@ -84,9 +88,9 @@ html, body {
     .contenedor__menuIzquierdo {
         align-items: center;
     }
-}
+} */
 /* Media Queries Desktop */
-@media (min-width: 1024px){
+/* @media (min-width: 1024px){
     .grid__ContainerIndex{
         grid-template-areas: 
                         "nav nav nav nav"
@@ -95,10 +99,9 @@ html, body {
                         "aside aside sec2 sec2"
                         "pie pie pie pie";
     }
-}
+} */
 
 .contenedor__menuIzquierdo {
-    background-color: #2E6099;
     width: auto;
     height: auto;
     padding: 10px;
@@ -108,7 +111,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
-    grid-area: aside;
+    margin-top: 15px;
 }
 
 .menuIzquierdo__titulo {
@@ -120,13 +123,18 @@ html, body {
     background-color: #051B33;
     color: rgb(250, 245, 245);
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 40px;
     border-radius: 10px;
     text-align: center;
     width: 150px;
+    transition: 1s;
+    
 }
-
+.menuIzquierdo__boton:hover {
+    transform: scale(1.2);
+    box-shadow: 3px 3px 5px black;
+} 
 .menuIzquierdo__boton a {
     color: hsla(204, 42%, 86%, 0.886);
 }
@@ -136,7 +144,7 @@ html, body {
 }
 .queEsElProyectoVenus__titulo {
     text-decoration: overline;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .queEsElProyectoVenus__descripcion {
@@ -144,9 +152,11 @@ html, body {
     text-align: justify;
     padding: 10px;
     margin-top: 5px;
+    margin-bottom: 20px;
     line-height: 1.5em;
     letter-spacing: 0.5px;
     overflow: auto;
+    background-color: rgba(0, 0, 0, 0.433);
 }
 
 h2 {
@@ -156,7 +166,6 @@ h2 {
     font-family: sans-serif;
     margin: 25px;
 }
-
 
 
 /* p {
@@ -182,18 +191,24 @@ a {
     text-decoration: none;
 }
 
-.contenedor__tablaComparativa {
-    margin: 50px 30px 20px 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: solid;
-    grid-area: sec2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 2;
+.tablaComparativaEBR {
+    width: auto;
+    text-align: justify;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.585);
+    color: hsl(206, 29%, 91%);
+    border-radius: 4px;
 }
+.titulo__tablaEBR {
+    text-align: center;
 
+}
+thead tbody tr td {
+    align-items: center;
+}
+.titulo__tablaEDM {
+    text-align: center;
+}
 /* FOOTER  */
 .pieDePagina {
     background-color: #051B33;
@@ -556,7 +571,7 @@ h3 {
 }
 
 /* CSS correspondiente a FAQS.html */
-.navBarFqs {
+.navBar {
     background-color: rgba(0, 0, 0, 0.531);
 }
 
@@ -568,6 +583,7 @@ main .introFaqs {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.433)
 }
 main .introFaqs p {
     align-items: center;
