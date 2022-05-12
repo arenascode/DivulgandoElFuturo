@@ -107,7 +107,7 @@ html, body {
     line-height: 1.5em;
     letter-spacing: 0.5px;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.391);
+    /* background-color: rgba(0, 0, 0, 0.391); */
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.52);
 }
 
@@ -178,24 +178,7 @@ h6 {
         margin-top: 20px;
     }
 }
-/* .tablaComparativaEBR {
-    width: auto;
-    text-align: justify;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.585);
-    color: hsl(206, 29%, 91%);
-    border-radius: 4px;
-}
-.titulo__tablaEBR {
-    text-align: center;
 
-}
-thead tbody tr td {
-    align-items: center;
-}
-.titulo__tablaEDM {
-    text-align: center;
-} */
 /* FOOTER  */
 .pieDePagina {
     background-color: #051B33;
@@ -279,9 +262,10 @@ thead tbody tr td {
     border-radius: 3px;
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
     transition: 1s;
+    margin: 20px;
     display: flex;
     align-items: center;
-    margin: 20px;
+
 }
 .caracteristicasEBR2 {
     border-radius: 3px;

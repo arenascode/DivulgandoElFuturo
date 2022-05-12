@@ -1,14 +1,22 @@
-.newsletter__intro {
-    border-radius: 2px;
-    box-shadow: 0 5px 5px 5px;
-        h2 {
-            font-size: 30px;
-            color: rgb(17, 35, 35);
-            text-decoration: none;
-        }
-            p {
-                font-size: 20px;
-                margin-bottom: 15px;
-                padding: 10px;
-            }
+//scss correspondiente a Index
+@import "index";
+// scss correspondiente a EBR 
+@import "estilosebr";
+// scss correspondiente a Newsletter
+@import "newsletter";
+
+// Estilos Generales
+@font-face {
+    font-family: 'Dosis', sans-serif;
+    src: url(../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+    
+}
+html, body { 
+    height: auto;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    color: hsl(210, 100%, 1%);
+    background-image: linear-gradient(to bottom left,white, #1f2b8c);
+    background-repeat: no-repeat;
+    background-size: auto;
 }

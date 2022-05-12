@@ -1,0 +1,17 @@
+// Aplicación de Mixin para desafío 7
+@mixin tamanioBanner ($alto, $ancho){ 
+    height: $alto;
+    width: $ancho;
+}
+
+.banner {
+@include tamanioBanner(200px, 100%);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(../images/center_for_resource_management_aerial.jpg);
+padding-left: 0;
+padding-right: 0;
+    
+}
