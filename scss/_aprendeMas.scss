@@ -1,0 +1,98 @@
+
+.aprendeMas__intro {
+    p {
+        text-align: center;
+    }
+}
+.aprendeMas__videos {
+    padding: 0;
+}
+.aprendeMas__Video1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 8px #00000033;
+    transition: 2s;
+    margin-bottom: 15px;
+        iframe {
+            padding-left: 10px;
+            margin: 5px;
+    }
+}
+.resumen__video {
+    padding: 15px;
+    text-align: justify;
+    a {
+        text-decoration: none;
+    }
+}
+.aprendeMas__Video2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+        border-radius: 3px;
+        box-shadow: 4px 4px 8px 8px #00000033;
+        transition: 2s;
+        margin-bottom: 15px;
+        iframe {
+            margin: 5px;
+            }
+}
+.aprendeMas__Video3 {
+    @extend .aprendeMas__Video1;
+    
+}
+.aprendeMas__Video4 {
+    @extend .aprendeMas__Video2;
+
+}
+.aprendeMas__Video5 {
+    @extend .aprendeMas__Video1;
+}
+.aprendeMas__Video6 {
+    @extend .aprendeMas__Video2;
+}
+
+// MediaQuery para hacer Responsive la pagina 
+
+@media (min-width: 768px) {
+    .aprendeMas__Video1, .aprendeMas__Video2, .aprendeMas__Video3, .aprendeMas__Video4, .aprendeMas__Video5, .aprendeMas__Video6 {
+        flex-wrap: nowrap;
+    }
+    .aprendeMas__Video1 {
+        iframe {
+            width: 400px;
+        }
+    }
+    .aprendeMas__Video2 {
+        iframe {
+            width: 400px;
+        }
+    }
+    .aprendeMas__Video6{
+        img {
+            width: 400px;
+        };
+    }
+}
+
+// Aside 
+
+.aprendeMas__aside {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+    padding-top: 10px;
+    }
+    a {
+    margin-top: 8px;  
+    }
+}

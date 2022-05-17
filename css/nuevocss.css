@@ -27,13 +27,18 @@
 
 .videoEbr {
   margin: 25px;
-  margin-left: 150px;
   border-radius: 3px;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s; }
+  transition: 0.3s;
+  align-content: center; }
+
+.videoEBR {
+  display: flex;
+  justify-content: center; }
 
 .ebr__caracteristicas {
-  width: auto; }
+  width: auto;
+  overflow-x: hidden; }
 
 .ebr__caracteristicasIntro {
   display: flex;
@@ -103,6 +108,66 @@
     font-size: 20px;
     margin-bottom: 15px;
     padding: 10px; }
+
+.aprendeMas__intro p {
+  text-align: center; }
+
+.aprendeMas__videos {
+  padding: 0; }
+
+.aprendeMas__Video1, .aprendeMas__Video3, .aprendeMas__Video5 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 8px 8px #00000033;
+  transition: 2s;
+  margin-bottom: 15px; }
+  .aprendeMas__Video1 iframe, .aprendeMas__Video3 iframe, .aprendeMas__Video5 iframe {
+    padding-left: 10px;
+    margin: 5px; }
+
+.resumen__video {
+  padding: 15px;
+  text-align: justify; }
+  .resumen__video a {
+    text-decoration: none; }
+
+.aprendeMas__Video2, .aprendeMas__Video4, .aprendeMas__Video6 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 8px 8px #00000033;
+  transition: 2s;
+  margin-bottom: 15px; }
+  .aprendeMas__Video2 iframe, .aprendeMas__Video4 iframe, .aprendeMas__Video6 iframe {
+    margin: 5px; }
+
+@media (min-width: 768px) {
+  .aprendeMas__Video1, .aprendeMas__Video3, .aprendeMas__Video5, .aprendeMas__Video2, .aprendeMas__Video4, .aprendeMas__Video6, .aprendeMas__Video3, .aprendeMas__Video4, .aprendeMas__Video5, .aprendeMas__Video6 {
+    flex-wrap: nowrap; }
+  .aprendeMas__Video1 iframe, .aprendeMas__Video3 iframe, .aprendeMas__Video5 iframe {
+    width: 400px; }
+  .aprendeMas__Video2 iframe, .aprendeMas__Video4 iframe, .aprendeMas__Video6 iframe {
+    width: 400px; }
+  .aprendeMas__Video6 img {
+    width: 400px; } }
+
+.aprendeMas__aside {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .aprendeMas__aside p {
+    padding-top: 10px; }
+  .aprendeMas__aside a {
+    margin-top: 8px; }
 
 @font-face {
   font-family: 'Dosis', sans-serif;

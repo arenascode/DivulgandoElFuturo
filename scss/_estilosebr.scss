@@ -39,14 +39,19 @@ $cajaCaracteristicas: (
 }
 .videoEbr {
     margin: 25px;
-    margin-left: 150px;
     border-radius: 3px;
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    align-content: center;
+}
+.videoEBR {
+    display: flex;
+    justify-content: center;
 }
 // Caracteristicas EBR 
 .ebr__caracteristicas {
     width: auto;
+    overflow-x: hidden;
 }
 .ebr__caracteristicasIntro {
     display: flex;
