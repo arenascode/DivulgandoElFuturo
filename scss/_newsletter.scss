@@ -1,6 +1,4 @@
 .newsletter__intro {
-    border-radius: 2px;
-    box-shadow: 0 5px 5px 5px;
         h2 {
             font-size: 30px;
             color: rgb(17, 35, 35);
@@ -11,4 +9,54 @@
                 margin-bottom: 15px;
                 padding: 10px;
             }
+}
+.newsletter__descripción {
+    text-align: center;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+.formularioNewsletter {
+
+    width: 400px;
+    margin-right: -50px;
+    background: #24303c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    box-shadow: 7px 13px 37px #000;
+}
+.newsletter__inputs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 2px solid #143A66;
+    background: #24303c5d;
+    color: white;
+}
+.formularioNewsletter p {
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+.formularioNewsletter p a {
+    color: white;
+    text-decoration: none;
+}
+.formularioNewsletter p a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.newsletter__botones {
+    margin-bottom: 10px;
+    width: 30%;
+    background: #528BCC;
+    color: white;
+    border: none;
+    padding: 5px;
 }

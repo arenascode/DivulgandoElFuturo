@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .banner {
   height: 200px;
   width: 100%;
@@ -97,17 +98,64 @@
   margin-left: 10px;
   border-radius: 2px; }
 
-.newsletter__intro {
-  border-radius: 2px;
-  box-shadow: 0 5px 5px 5px; }
-  .newsletter__intro h2 {
-    font-size: 30px;
-    color: #112323;
-    text-decoration: none; }
-  .newsletter__intro p {
-    font-size: 20px;
-    margin-bottom: 15px;
-    padding: 10px; }
+.newsletter__intro h2 {
+  font-size: 30px;
+  color: #112323;
+  text-decoration: none; }
+
+.newsletter__intro p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 10px; }
+
+.newsletter__descripción {
+  text-align: center; }
+
+.newsletter {
+  display: flex;
+  justify-content: center; }
+
+.formularioNewsletter {
+  width: 400px;
+  margin-right: -50px;
+  background: #24303c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-shadow: 7px 13px 37px #000; }
+
+.newsletter__inputs {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 2px solid #143A66;
+  background: #24303c5d;
+  color: white; }
+
+.formularioNewsletter p {
+  height: 30px;
+  text-align: center;
+  font-size: 15px; }
+
+.formularioNewsletter p a {
+  color: white;
+  text-decoration: none; }
+
+.formularioNewsletter p a:hover {
+  color: white;
+  text-decoration: underline; }
+
+.newsletter__botones {
+  margin-bottom: 10px;
+  width: 30%;
+  background: #528BCC;
+  color: white;
+  border: none;
+  padding: 5px; }
 
 .aprendeMas__intro p {
   text-align: center; }
@@ -168,6 +216,37 @@
     padding-top: 10px; }
   .aprendeMas__aside a {
     margin-top: 8px; }
+
+.faqs {
+  width: 100vw;
+  box-shadow: 5px 5px 5px 5px #00000085;
+  overflow-x: hidden; }
+
+.introFaqs {
+  width: auto;
+  padding: 10px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  box-shadow: 5px 5px 5px 5px #00000085; }
+  .introFaqs h3 {
+    text-align: center;
+    margin: 10px; }
+    .introFaqs h3 p {
+      margin: 10px;
+      align-items: center;
+      text-align: justify; }
+
+.colorFondo {
+  background-color: #00000000; }
+
+#flush-headingOne {
+  background-color: #00000000; }
+
+#flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #flush-collapseFive, #flush-collapseSix, #flush-collapseSeven, #flush-collapseEight, #flush-collapseNine, #flush-collapseTen, #flush-collapseEleven, #flush-collapseTwelve {
+  color: #000;
+  text-align: justify;
+  box-shadow: 0 5px 5px 5px #00000085; }
 
 @font-face {
   font-family: 'Dosis', sans-serif;

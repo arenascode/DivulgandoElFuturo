@@ -6,12 +6,13 @@
 @import "newsletter";
 // scss correspondiente a AprendeMas
 @import "aprendeMas";
+// scss correspondiente a Faqs
+@import "faqs";
 
 // Estilos Generales
 @font-face {
     font-family: 'Dosis', sans-serif;
     src: url(../fonts/Dosis/Dosis-VariableFont_wght.ttf);
-    
 }
 html, body { 
     height: auto;

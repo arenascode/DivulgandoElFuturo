@@ -86,7 +86,9 @@ html, body {
 
 
 .contenedorIzquierdo {
-    /* margin-right: 10px; */
+display: flex;
+justify-content: center;
+align-items: center;
     margin-top: 85px;
 }
 
@@ -113,7 +115,7 @@ html, body {
 
 h2 {
     text-align: center;
-    text-decoration: overline;
+    /* text-decoration: overline; */
     letter-spacing: 2px;
     font-family: sans-serif;
     margin: 25px;
@@ -345,9 +347,9 @@ h6 {
 }
 /* CSS correspondiente a aprendeMas.html */
 
-.tituloAprendeMas {
+/* .tituloAprendeMas {
     align-items: center;
-}
+} */
 
 /* Media Queries Mobile
 @media (max-width: 360px){
@@ -403,194 +405,36 @@ h6 {
     display: flex;
     flex-wrap: wrap;
 } */
-h3 {
+/* h3 {
     text-align: center;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-/* .aprendeMas__Video1 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 25px;
+    margin-bottom: 15px;
 } */
 
-/* .aprendeMas__Video1>div {
-    margin: 10px;
-} */
-/* .aprendeMas__Video1 iframe {
-    width: auto;
-    height: auto;
-} */
-
-/* .aprendeMas__Video2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px;
-}
-
-.aprendeMas__Video2>div {
-    margin: 15px;
-}
-.aprendeMas__Video2 iframe {
-    width: auto;
-    height: auto;
-} */
-/* .aprendeMas__Video3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px;
-}
-
-.aprendeMas__Video3>div {
-    margin: 15px;
-}
-/* .aprendeMas__Video3 iframe {
-    width: auto;
-    height: auto;
-} */
-/* .aprendeMas__Video4 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px;
-}
-
-.aprendeMas__Video4>div {
-    margin: 15px;
-}
-.aprendeMas__Video4 iframe {
-    width: auto;
-    height: auto;
-} */
-/* .aprendeMas__Video5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px;
-}
-
-.aprendeMas__Video5>div {
-    margin: 15px;
-}
-.aprendeMas__Video5 iframe {
-    width: auto;
-    height: auto;
-}
-.aprendeMas__Video6 {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 25px;
-}
-
-.aprendeMas__Video6>div {
-    margin: 15px;
-}
-.aprendeMas__Video6 iframe {
-    width: auto;
-    height: auto;
-}
-.aprendeMas__Video6 div p a {
-    margin: 10px;
-} */
-/* .aprendeMas__aside {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.grid__AprendeMas__aside p {
-    padding-top: 10px;
-}
-
-.grid__AprendeMas__aside a {
-    margin-top: 8px;
-} */
-
-/* .grid__AprendeMas__pieDePagina {
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    grid-area: pie;
-    background-color: #051B33;
-    color: hsl(150, 6%, 93%);
-} */
 
 /* CSS correspondiente a FAQS.html */
-.navBar {
+/* .navBar {
     background-color: rgba(0, 0, 0, 0.531);
-}
+} */
 
-main .introFaqs {
-    border-radius: 3px;
-    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 1s;
-    /* display: flex; */
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.433)
+/* main .introFaqs {
+    margin: 25px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.52);
 }
 main .introFaqs p {
-    align-items: center;
+    margin: 10px;
+    text-align: justify;
+} */
+/* .colorFondo {
+    background-color: rgba(0, 0, 0, 0);
 }
 #flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #flush-collapseFive, #flush-collapseSix, #flush-collapseSeven, #flush-collapseEight, #flush-collapseNine, #flush-collapseTen, #flush-collapseEleven, #flush-collapseTwelve {
     color: #000;
     text-align: justify;
-}
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.52);
+} */
 
 /* CSS Correspondiente al Newsletter.html */
 
-.newsletter__descripción {
-    text-align: center;
-}
-.formularioNewsletter {
-
-    width: 400px;
-    background: #24303c;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 50px 300px;
-    padding: 25px;
-    box-shadow: 7px 13px 37px #000;
-}
-.newsletter__inputs {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    border: 2px solid #143A66;
-    background: #24303c5d;
-    color: white;
-}
-.formularioNewsletter p {
-    height: 30px;
-    text-align: center;
-    font-size: 15px;
-}
-.formularioNewsletter p a {
-    color: white;
-    text-decoration: none;
-}
-.formularioNewsletter p a:hover {
-    color: white;
-    text-decoration: underline;
-}
-.newsletter__botones {
-    margin-left: 125px;
-    margin-bottom: 5px;
-    width: 30%;
-    background: #528BCC;
-    color: white;
-    border: none;
-    padding: 5px;
-}
