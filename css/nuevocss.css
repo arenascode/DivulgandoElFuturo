@@ -1,4 +1,32 @@
 @charset "UTF-8";
+.navContainer {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center; }
+
+#navbarSupportedContent {
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+
+.nav-item {
+  list-style: none; }
+
+.itemsNav__boton {
+  text-decoration: none;
+  color: rgba(204, 222, 234, 0.886);
+  margin: 15px;
+  transition: 1s; }
+
+.itemsNav__boton:hover {
+  transform: scale(1.1); }
+
+.navLogo {
+  border-radius: 50px; }
+
 .banner {
   height: 200px;
   width: 100%;
@@ -9,6 +37,107 @@
   background-image: url(../images/center_for_resource_management_aerial.jpg);
   padding-left: 0;
   padding-right: 0; }
+
+.contenedorIzquierdo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px; }
+
+.queEsElProyectoVenus__titulo {
+  text-decoration: overline;
+  margin-top: 25px; }
+
+.queEsElProyectoVenus__intro {
+  margin-left: auto; }
+
+.queEsElProyectoVenus__descripcion {
+  width: 100%;
+  text-align: justify;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  overflow: auto;
+  /* background-color: rgba(0, 0, 0, 0.391); */
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.52); }
+
+h2 {
+  text-align: center;
+  /* text-decoration: overline; */
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  margin: 25px; }
+
+.parallax {
+  background-image: url("../images/The-Venus-Project-parallax.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+ol li {
+  color: #4b167a; }
+
+li {
+  list-style: square;
+  text-align: left; }
+
+a {
+  text-decoration: none; }
+
+.contenedor__AspectosPrincipales {
+  margin-top: 15px; }
+
+.contenedor__AspectosPrincipales h5 {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  color: rgba(232, 241, 247, 0.886); }
+
+h6 {
+  text-align: center; }
+
+.aspectosPrincipales__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px; }
+
+@media (max-width: 576px) {
+  .aspectosPrincipales__cards {
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center; }
+  .cardMargin {
+    margin-top: 20px; } }
+
+/* FOOTER  */
+.pieDePagina {
+  background-color: #051B33;
+  color: #eceeed;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: pie;
+  margin-top: 10px; }
+
+.pieDePagina__rrss {
+  display: flex;
+  justify-content: space-around; }
+
+.pieDePagina__rrss img {
+  height: 30px;
+  width: 30px;
+  margin: 3px; }
+
+.donaAlProyecto {
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 2px; }
 
 .navContainer img {
   border-radius: 50px; }
@@ -112,8 +241,10 @@
   text-align: center; }
 
 .newsletter {
+  width: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-content: center; }
 
 .formularioNewsletter {
   width: 400px;
@@ -253,10 +384,8 @@
   src: url(../fonts/Dosis/Dosis-VariableFont_wght.ttf); }
 
 html, body {
+  background-color: #949BA0;
   height: auto;
   width: 100%;
   font-family: 'Dosis', sans-serif;
-  color: #000305;
-  background-image: linear-gradient(to bottom left, white, #1f2b8c);
-  background-repeat: no-repeat;
-  background-size: auto; }
+  color: #000305; }

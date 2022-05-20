@@ -15,11 +15,12 @@
     src: url(../fonts/Dosis/Dosis-VariableFont_wght.ttf);
 }
 html, body { 
+    background-color: #949BA0;
     height: auto;
     width: 100%;
     font-family: 'Dosis', sans-serif;
     color: hsl(210, 100%, 1%);
-    background-image: linear-gradient(to bottom left,white, #1f2b8c);
-    background-repeat: no-repeat;
-    background-size: auto;
+    // background-image: linear-gradient(to bottom left,white, #1f2b8c);
+    // background-repeat: no-repeat;
+    // background-size: auto;
 }
