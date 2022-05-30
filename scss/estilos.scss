@@ -20,7 +20,91 @@ html, body {
     width: 100%;
     font-family: 'Dosis', sans-serif;
     color: hsl(210, 100%, 1%);
-    // background-image: linear-gradient(to bottom left,white, #1f2b8c);
-    // background-repeat: no-repeat;
-    // background-size: auto;
+}
+// Barra de Navegación 
+.navBar {
+    grid-area: navbar;
+    margin: 0;
+}
+.navContainer {
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+        a {
+            width: min-content;
+            margin-right: 5px;
+        }
+        button { 
+            width: 100%;
+        }
+}
+.nav-item {
+    a {
+        width: auto;
+    }
+}
+#navbarSupportedContent {
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+}
+.nav-item {
+    list-style: none;
+    
+}
+.itemsNav__boton {
+    text-decoration: none;
+    color: hsla(204, 42%, 86%, 0.886);
+    margin: 15px;
+    transition: 1s;
+}
+.itemsNav__boton:hover {
+    transform: scale(1.1);
+}
+
+.navLogo {
+    border-radius: 50px;
+}
+
+// Barra Nav Responsive 
+
+@media (min-width: 397px) {
+    .navContainer {
+        button {
+            width: auto;
+        }
+    }
+}
+// Footer 
+
+.pieDePagina {
+    background-color: #191716;
+    color: hsl(150, 6%, 93%);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: pie;
+    // margin-top: 10px;
+}
+.pieDePagina__rrss {
+    display: flex;
+    justify-content:space-around;
+}
+.pieDePagina__rrss img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+
+.donaAlProyecto {
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 2px;
 }

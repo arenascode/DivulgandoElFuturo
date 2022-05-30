@@ -1,32 +1,4 @@
 @charset "UTF-8";
-.navContainer {
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center; }
-
-#navbarSupportedContent {
-  margin-left: 20px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  justify-items: center; }
-
-.nav-item {
-  list-style: none; }
-
-.itemsNav__boton {
-  text-decoration: none;
-  color: rgba(204, 222, 234, 0.886);
-  margin: 15px;
-  transition: 1s; }
-
-.itemsNav__boton:hover {
-  transform: scale(1.1); }
-
-.navLogo {
-  border-radius: 50px; }
-
 .banner {
   height: 200px;
   width: 100%;
@@ -34,24 +6,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/center_for_resource_management_aerial.jpg);
+  background-image: url(../images/Banner/center_for_resource_management_aerial.jpg);
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  grid-area: banner; }
 
 .contenedorIzquierdo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 85px; }
+  margin-top: 20px;
+  grid-area: aside; }
+  .contenedorIzquierdo .card {
+    border: solid 1px; }
+    .contenedorIzquierdo .card .card-body {
+      background-color: #19171686; }
 
 .queEsElProyectoVenus__titulo {
-  text-decoration: overline;
   margin-top: 25px; }
 
 .queEsElProyectoVenus__intro {
   margin-left: auto; }
 
 .queEsElProyectoVenus__descripcion {
+  background-color: #19171686;
+  color: #D6DBD2;
   width: 100%;
   text-align: justify;
   padding: 10px;
@@ -60,7 +39,6 @@
   line-height: 1.5em;
   letter-spacing: 0.5px;
   overflow: auto;
-  /* background-color: rgba(0, 0, 0, 0.391); */
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.52); }
 
 h2 {
@@ -70,26 +48,29 @@ h2 {
   font-family: sans-serif;
   margin: 25px; }
 
-.parallax {
-  background-image: url("../images/The-Venus-Project-parallax.jpg");
-  height: 200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+@media (min-width: 768px) {
+  .grid__padre {
+    display: grid;
+    grid-template-areas: "navbar navbar navbar" "banner banner banner" "principal principal aside" "modals modals modals" "cita cita cita" "pie pie pie";
+    grid-template-rows: repeat(6 auto);
+    grid-template-columns: auto auto;
+    justify-items: stretch;
+    align-items: start;
+    justify-content: stretch; }
+  .contenedorIzquierdo {
+    margin: 30px 10px 10px 10px; } }
 
-ol li {
-  color: #4b167a; }
-
-li {
-  list-style: square;
-  text-align: left; }
-
-a {
-  text-decoration: none; }
+.contenedor__Principal {
+  grid-area: principal;
+  justify-self: stretch; }
 
 .contenedor__AspectosPrincipales {
   margin-top: 15px; }
+
+.aspectosPrincipales {
+  grid-area: modals; }
+  .aspectosPrincipales h2 {
+    margin-top: 15px; }
 
 .contenedor__AspectosPrincipales h5 {
   text-align: center;
@@ -97,47 +78,94 @@ a {
   justify-items: center;
   color: rgba(232, 241, 247, 0.886); }
 
-h6 {
-  text-align: center; }
+.modals__aspectosPrincipales {
+  display: grid;
+  grid-template-areas: "ambient transporte" "energia humano";
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
 
-.aspectosPrincipales__cards {
+.medioAmbiente {
+  grid-area: ambient;
+  text-align: center; }
+  .medioAmbiente button {
+    width: 100%; }
+
+.modal-header {
+  background-color: #1416149f;
+  color: white;
+  box-shadow: 5px 10px 8px #18151574; }
+  .modal-header button {
+    width: max-content; }
+
+.modal-body {
+  background-color: rgba(169, 169, 169, 0.771); }
+
+.sistemasTransporte {
+  grid-area: transporte;
+  text-align: center; }
+  .sistemasTransporte button {
+    width: 100%; }
+
+.modal-header button {
+  width: max-content; }
+
+.fuentesdeEnergia {
+  grid-area: energia;
+  text-align: center; }
+  .fuentesdeEnergia button {
+    width: 100%; }
+
+.modal-header button {
+  width: max-content; }
+
+.potencialHumano {
+  grid-area: humano;
+  text-align: center; }
+  .potencialHumano button {
+    width: 100%; }
+
+.modal-header button {
+  width: max-content; }
+
+h6 {
+  text-align: center;
+  padding: 5px; }
+
+.card-body {
+  background-color: gainsboro; }
+  .card-body p {
+    text-align: justify; }
+
+.modal-footer {
+  background-color: #1416149f; }
+
+.cita__JaqueFresco {
+  background-color: #191716c0;
+  color: white;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: 20px; }
-
-@media (max-width: 576px) {
-  .aspectosPrincipales__cards {
-    flex-direction: column;
-    margin-top: 15px;
-    align-items: center; }
-  .cardMargin {
-    margin-top: 20px; } }
-
-/* FOOTER  */
-.pieDePagina {
-  background-color: #051B33;
-  color: #eceeed;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  grid-area: pie;
-  margin-top: 10px; }
+  grid-area: cita; }
 
-.pieDePagina__rrss {
-  display: flex;
-  justify-content: space-around; }
+.cita__texto {
+  margin-top: 30px;
+  text-align: end; }
 
-.pieDePagina__rrss img {
-  height: 30px;
-  width: 30px;
-  margin: 3px; }
+.cita__icono {
+  width: 15%; }
 
-.donaAlProyecto {
-  width: 100px;
-  margin-left: 10px;
-  border-radius: 2px; }
+.cita__foto {
+  align-self: center;
+  width: max-content;
+  margin-bottom: 15px; }
+
+.foto_Jaque {
+  border-radius: 50%;
+  height: 200px;
+  align-self: center;
+  margin: auto; }
 
 .navContainer img {
   border-radius: 50px; }
@@ -203,29 +231,6 @@ h6 {
   .ebr__caracteristica2 div p, .ebr__caracteristica4 div p, .ebr__caracteristica6 div p {
     padding: 10px;
     text-align: justify; }
-
-.pieDePagina {
-  background-color: #051B33;
-  color: #eceeed;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px; }
-
-.pieDePagina__rrss {
-  display: flex;
-  justify-content: space-around; }
-
-.pieDePagina__rrss img {
-  height: 30px;
-  width: 30px;
-  margin: 3px; }
-
-.donaAlProyecto {
-  width: 100px;
-  margin-left: 10px;
-  border-radius: 2px; }
 
 .newsletter__intro h2 {
   font-size: 30px;
@@ -389,3 +394,72 @@ html, body {
   width: 100%;
   font-family: 'Dosis', sans-serif;
   color: #000305; }
+
+.navBar {
+  grid-area: navbar;
+  margin: 0; }
+
+.navContainer {
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center; }
+  .navContainer a {
+    width: min-content;
+    margin-right: 5px; }
+  .navContainer button {
+    width: 100%; }
+
+.nav-item a {
+  width: auto; }
+
+#navbarSupportedContent {
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+
+.nav-item {
+  list-style: none; }
+
+.itemsNav__boton {
+  text-decoration: none;
+  color: rgba(204, 222, 234, 0.886);
+  margin: 15px;
+  transition: 1s; }
+
+.itemsNav__boton:hover {
+  transform: scale(1.1); }
+
+.navLogo {
+  border-radius: 50px; }
+
+@media (min-width: 397px) {
+  .navContainer button {
+    width: auto; } }
+
+.pieDePagina {
+  background-color: #191716;
+  color: #eceeed;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: pie; }
+
+.pieDePagina__rrss {
+  display: flex;
+  justify-content: space-around; }
+
+.pieDePagina__rrss img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 3px; }
+
+.donaAlProyecto {
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 2px; }

@@ -10,50 +10,74 @@
     <link rel="stylesheet" href="../css/pruebacss.css">
 </head>
 
-<body>
-    <!-- Sección de Logo y Barra de Navegación -->
-    <nav class="barraNavegacion">
-        <div class="itemsNav__logo">
-            <a href="../index.html"><img src="../images/Logo.jpeg" alt="logo" width="100" height="100"></a>
-        </div>
-        <div class="itemsNav">
-            <a class="itemsNav__boton" href="ebr.html">Economía Basada En Recursos</a>
-            <a class="itemsNav__boton" href="aprendeMas.html">Aprende Más Acerca Del Proyecto</a>
-            <a class="itemsNav__boton" href="faqs.html">FAQS</a>
-            <a class="itemsNav__boton" href="newsletter.html">Newsletter</a>
-        </div>
-    </nav>
-    <!--Fin de Logo y Barra de Navegación-->
-
-    <!--Acá Va El Formulario-->
-<div class="newsletter__intro">
-    <h2>Recibe nuestras novedades acerca del futuro</h2>
-    <p class="newsletter__descripción">Si te interesó el proyecto y quieres estar enterado de los ultimos avances del
-        mismo suscribete a nuestro
-        newsletter</p>
-</div>
-    <section class="formularioNewsletter">
-        <input class="newsletter__inputs" type="text" name="nombre" placeholder="Ingrese su Nombre" required>
-        <input class="newsletter__inputs" type="text" name="apellido" placeholder="Ingrese su Apellido" required>
-        <input class="newsletter__inputs" type="mail" name="mail" placeholder="Ingrese su Correo" required>
-        <textarea class="newsletter__inputs" name="mensajeAdicional" cols="30" rows="10"
-            placeholder="Puedes Contarnos Algo Más"></textarea>
-        <input class="newsletter__inputs" type="checkbox" name="acepto" required>
-        <p>Acepto <a href="">Terminos y Condiciones</a></p>
-        <input class="newsletter__botones" type="submit" value="Suscribete">
-        <input class="newsletter__botones" type="reset" value="Limpiar">
-    </section>
-
-</body>
-<!-- Acá Comienza el Footer-->
-<footer class="pieDePagina">
-    <img src="../images/RRSS/Twitter.png" alt="twitter" width="50" height="50">
-    <img src="../images/RRSS/fb.png" alt="fb" width="50" height="50">
-    <img src="../images/RRSS/IG.png" alt="IG" width="50" height="50">
-    <p>Este sitio web es unicamente con fines educativos sin animo alguno de lucro con su contenido. Todos los derechos
-        son reservados a sus autores</p>
-    <button class="donaAlProyecto">Doná al proyecto</button>
-
-</footer>
-<!-- fin del footer -->
-</html>
+<div class="col-lg-12 contenedor__AspectosPrincipales" >
+    <h5>Aspectos Principales</h5>
+    <div class="aspectosPrincipales__cards">
+      <div class="dropdown cardMargin">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Ciudades
+        </a>
+        <ul class="dropdown-menu">
+          <div>
+            <h6><b>Ciudades Circulares</b></h6>
+            <div class="card card_" style="width: 18rem;">
+              <img src="images/Ciudades en el mar/circular-cities-aerial.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">El Proyecto Venus propone un plan de ciudad circular que utilizaría los recursos y técnicas de construcción disponibles más sofisticados. <p>Su disposición circular, geométricamente elegante y eficiente, estará rodeada de parques y hermosos jardines, que se incorporarán al diseño de la ciudad.</p>
+              </p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="dropdown cardMargin">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Sistemas de Transporte
+        </a>
+        <ul class="dropdown-menu positionRelative">
+            <div>
+            <h6><b>Transportadores</b></h6>
+            <div class="card card_" style="width: 18rem;">
+              <img src="images/Transporte/transveyor-still.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">En lugar de vehículos de motor en la ciudad, todo el transporte se realiza mediante una especie de trenes circulares que se denominan transportadores. Se mueven radial, circunferencial y verticalmente y cumplen la función de ascensores y autobuses a la vez. 
+                <p>Una ruta circular alrededor de los perímetros exteriores conectará los sistemas de transporte a extensiones radiales y verticales, haciendo posible viajar rápidamente a cualquier parte de la ciudad.</p></p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="dropdown cardMargin">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Fuentes de Energía
+        </a>
+        <ul class="dropdown-menu positionRelative">
+          <div>
+            <h6><b>Turbinas Submarinas</b></h6>
+            <div class="card card_" style="width: 18rem;">
+              <img src="images/FuentesdeEnergia/turbinaSubmarina.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Las corrientes oceánicas son una fuente de energía natural que nadie ha aprovechado antes. Usando turbinas submarinas gigantes con más fuerza de rotación o par, la energía de las corrientes oceánicas profundas, como la Corriente del Golfo en la costa de Florida, se puede convertir en energía eléctrica limpia. Estas turbinas de rotación lenta tendrían un separador centrífugo y deflectores para evitar daños a la vida marina. Una tecnología que aproveche el poder de las corrientes oceánicas podría proporcionar otra forma de energía renovable limpia e ilimitada.</p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="dropdown cardMargin">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Factores Humanos
+        </a>
+        <ul class="dropdown-menu positionRelative">
+          <div>
+            <h6><b>El Potencial Humano</b></h6>
+            <div class="card card_" style="width: 18rem;">
+              <img src="images/Inside-the-city-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Este es nuestro plan : dirigir la tecnología y los recursos hacia la resolución de problemas en beneficio de todas las personas y del planeta, y actualizar nuestro sistema de valores para que se corresponda con los principios de esta nueva dirección. Esto, combinado con la educación sobre cómo relacionarnos entre nosotros de una manera mucho más significativa, podría reducir considerablemente el estrés mental y físico y dejarnos libres para explorar y desarrollar nuestras habilidades.</p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
