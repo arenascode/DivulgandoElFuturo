@@ -24,7 +24,7 @@ html, body {
 // Barra de Navegación 
 .navBar {
     grid-area: navbar;
-    margin: 0;
+    // margin: 0;
 }
 .navContainer {
     padding: 10px;
@@ -78,6 +78,9 @@ html, body {
         button {
             width: auto;
         }
+    }
+    .pieDePagina__rrss {
+        margin-bottom: 10px;
     }
 }
 // Footer 

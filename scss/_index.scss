@@ -11,8 +11,8 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-image: url(../images/Banner/center_for_resource_management_aerial.jpg);
-padding-left: 0;
-padding-right: 0;
+// padding-left: 0;
+// padding-right: 0;
 grid-area: banner;
     
 }
@@ -177,6 +177,7 @@ grid-area: banner;
 h6 {
     text-align: center;
     padding: 5px;
+    margin-top: 10px;
 }
 .card-body {
     background-color: gainsboro;
