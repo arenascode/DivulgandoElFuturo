@@ -1,13 +1,8 @@
 .newsletter__intro {
-        h2 {
-            font-size: 30px;
-            color: rgb(17, 35, 35);
-            text-decoration: none;
-        }
-            p {
-                font-size: 20px;
-                margin-bottom: 15px;
-                padding: 10px;
+        margin: 25px 10px;
+        p {
+            margin-bottom: 15px;
+            padding: 10px;
             }
 }
 .newsletter__descripción {
@@ -18,11 +13,12 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 10px 10px 25px;
 }
 .formularioNewsletter {
 
     width: 400px;
-    margin-right: -50px;
+    // margin-right: -50px;
     background: #24303c;
     color: white;
     display: flex;

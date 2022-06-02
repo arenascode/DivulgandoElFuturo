@@ -16,11 +16,14 @@ background-image: url(../images/Banner/center_for_resource_management_aerial.jpg
 grid-area: banner;
     
 }
+.grid__padre {
+    padding: 0;
+}
 .contenedorIzquierdo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0 20px;
     grid-area: aside;
     .card {
     border: solid 1px;
@@ -42,7 +45,7 @@ grid-area: banner;
         width: 100%;
         text-align: justify;
         padding: 10px;
-        margin-top: 5px;
+        margin-top: 15px;
         margin-bottom: 20px;
         line-height: 1.5em;
         letter-spacing: 0.5px;
@@ -55,7 +58,6 @@ grid-area: banner;
         /* text-decoration: overline; */
         letter-spacing: 2px;
         font-family: sans-serif;
-        margin: 25px;
     }
     
 // Responsive Desktop 
@@ -83,6 +85,7 @@ grid-area: banner;
 .contenedor__Principal {
     grid-area: principal;
     justify-self: stretch;
+    margin: auto;
 }
 // Aspectos Principales 
 
@@ -91,9 +94,11 @@ grid-area: banner;
 }
 
 .aspectosPrincipales {
+    width: inherit;
     grid-area: modals;
     h2 {
         margin-top: 15px;
+        padding: 0;
     }
 }
 .contenedor__AspectosPrincipales h5 {
@@ -104,13 +109,17 @@ grid-area: banner;
 
 }
 .modals__aspectosPrincipales {
+    margin: 20px 0 20px;
+    width: 100%;
+    padding: 0;
     display: grid;
     grid-template-areas: 
     "ambient transporte"
     "energia humano";
     align-items: center;
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
+    justify-content: space-evenly;
 }
 
 .medioAmbiente {
@@ -192,6 +201,7 @@ h6 {
 // Cita Jaque Fresco 
 
 .cita__JaqueFresco {
+    margin: 0;
     background-color: #191716c0;
     color: white;
     margin-top: 20px;

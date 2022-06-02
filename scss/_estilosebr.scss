@@ -8,14 +8,8 @@ $cajaCaracteristicas: (
     bordeInferior: 15px
 );
 
-// Barra Nav EBR
-
-.navContainer {
-    // a {
-    //     text-decoration: none;
-        img {
-            border-radius: 50px;
-        };
+.paddingContEbr{
+    padding: 0;
 }
 // Banner
 
@@ -25,7 +19,9 @@ $cajaCaracteristicas: (
 }
 
 // Introducción EBR
-
+.ebr {
+    margin: 0;
+}
 .ebr__intro {
     h2 {
         text-align: center;
