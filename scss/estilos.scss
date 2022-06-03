@@ -70,18 +70,20 @@ html, body {
 .navLogo {
     border-radius: 50px;
 }
-
+.marginLeftName {
+    margin-left: 5px;
+}
 // Barra Nav Responsive 
 
 @media (min-width: 397px) {
-    .navContainer {
-        button {
-            width: auto;
-        }
-    }
+.navContainer {
+    button {
+        width: auto;
     .pieDePagina__rrss {
         margin-bottom: 10px;
     }
+}
+}
 }
 // Footer 
 

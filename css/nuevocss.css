@@ -24,7 +24,8 @@
       background-color: #19171686; }
 
 .queEsElProyectoVenus__titulo {
-  margin-top: 25px; }
+  margin-top: 25px;
+  text-align: center; }
 
 .queEsElProyectoVenus__intro {
   margin-left: auto; }
@@ -186,7 +187,7 @@ h6 {
 .ebr {
   margin: 0; }
 
-.ebr__intro h2 {
+.ebr__intro h1 {
   text-align: center;
   margin-top: 20px; }
 
@@ -215,7 +216,6 @@ h6 {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 2px 0px;
-  width: fit-content;
   margin: 12px 0px 15px; }
   .ebr__caracteristicasIntro img {
     height: 270px;
@@ -225,7 +225,7 @@ h6 {
   .ebr__caracteristicasIntro p {
     font-size: 1em;
     text-align: justify;
-    margin: auto; }
+    margin: 10px; }
 
 .ebr__caracteristicas h3 {
   text-align: center; }
@@ -269,7 +269,7 @@ h6 {
     .ebr__caracteristicasIntro p {
       font-size: 1rem;
       text-align: justify;
-      margin: auto; }
+      margin: 10px; }
   .ebr__caracteristica1, .ebr__caracteristica3, .ebr__caracteristica5, .ebr__caracteristica7 {
     flex-direction: column;
     margin-top: 12px; }
@@ -389,7 +389,8 @@ h6 {
 
 .aprendeMas__intro {
   margin: 20px; }
-  .aprendeMas__intro p {
+  .aprendeMas__intro h1 {
+    margin-top: 25px;
     text-align: center; }
 
 .aprendeMas__videos {
@@ -473,10 +474,10 @@ h6 {
   letter-spacing: 0.5px;
   text-align: justify;
   box-shadow: 5px 5px 5px 5px #00000085; }
-  .introFaqs h3 {
+  .introFaqs h1 {
     text-align: center;
     margin: 10px; }
-    .introFaqs h3 p {
+    .introFaqs h1 p {
       margin: 10px;
       align-items: center;
       text-align: justify; }
@@ -552,11 +553,14 @@ html, body {
 .navLogo {
   border-radius: 50px; }
 
+.marginLeftName {
+  margin-left: 5px; }
+
 @media (min-width: 397px) {
   .navContainer button {
     width: auto; }
-  .pieDePagina__rrss {
-    margin-bottom: 10px; } }
+    .navContainer button .pieDePagina__rrss {
+      margin-bottom: 10px; } }
 
 .pieDePagina {
   background-color: #191716;

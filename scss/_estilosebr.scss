@@ -23,7 +23,7 @@ $cajaCaracteristicas: (
     margin: 0;
 }
 .ebr__intro {
-    h2 {
+    h1 {
         text-align: center;
         margin-top: 20px;
     }
@@ -57,7 +57,6 @@ $cajaCaracteristicas: (
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 2px 0px;
-    width: fit-content;
     margin: 12px 0px 15px;
     img {
         height: 270px;
@@ -68,7 +67,7 @@ $cajaCaracteristicas: (
     p {
     font-size: 1em;
     text-align: justify;
-    margin: auto;
+    margin: 10px;
     }
 }
 .ebr__caracteristicas h3 {
@@ -138,7 +137,7 @@ $cajaCaracteristicas: (
             p {
             font-size: 1rem;
             text-align: justify;
-            margin: auto;
+            margin: 10px;
 
         }
     }
